@@ -31,22 +31,32 @@
         <h2 class="heading2 heading2--match-program">Подбор программы</h2>
         <b class="phrase phrase--form">Заполните анкету и мы подберем программу питания для вашего кота</b>
         <form action="https://echo.htmlacademy.ru" method="post" name="match-program">
-          <label class="form__label">Имя:<sup>*</sup><input type="text" name="name"></label>
-          <label class="form__label">Вес (кг):<sup>*</sup><input type="text" name="weight"></label>
-          <label class="form__label">Возраст (лет): <input type="number" name="age"></label>
-          <label class="form__label"><input type="radio" name="program" value="losing-weight">Похудение</label>
-          <label class="form__label"><input type="radio" name="program" value="add-weight">Набор массы</label>
-          <label class="form__label"><input type="radio" name="program" value="dont-know">Не знаю (нужен ваш совет)</label>
+          <fieldset>
+            <label class="form__label">Имя:<sup>*</sup><input type="text" name="name"></label>
+            <label class="form__label">Вес (кг):<sup>*</sup><input type="text" name="weight"></label>
+            <label class="form__label">Возраст (лет): <input type="number" name="age"></label>
+          </fieldset>
+          <fieldset>
+            <label class="form__label"><input type="radio" name="program" value="losing-weight">Похудение</label>
+            <label class="form__label"><input type="radio" name="program" value="add-weight">Набор массы</label>
+            <label class="form__label"><input type="radio" name="program" value="dont-know">Не знаю (нужен ваш совет)</label>
+          </fieldset>
+          <fieldset>
           <h3 class="heading3 heading3--contacts">Контактные данные (владельца кота)</h3>
           <label class="form__label">E-mail:<sup>*</sup><input type="email" name="email"></label>
           <label class="form__label">Телефон:<sup>*</sup><input type="tel" name="telephone"></label>
+          </fieldset>
+          <fieldset>
           <h3 class="heading3 heading3--comment">Комментарий</h3>
           <textarea class="form__label" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset>
           <h3 class="heading3 heading3--additional">Дополнительно</h3>
           <label class="form__label"><input type="checkbox" name="sugar-replacer">Сахарозамениель</label>
           <label class="form__label"><input type="checkbox" name="water">Питьевая вода</label>
           <label class="form__label"><input type="checkbox" name="milk">Молоко</label>
           <label class="form__label"><input type="checkbox" name="vitamins">Витамины</label>
+          </fieldset>
           <button class="button button--submit" type="submit"> Отправить заявку</button>
         </form>
         <small class="text text--sub"><sup>*</sup>- обязательные поля</small>
@@ -59,7 +69,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65064490445644!2d30.322791685845466!3d59.93873651936211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1554281040989!5m2!1sru!2sru" width="320" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
       <a href="index.html"><img class="page-footer__site-name" src="http://placehold.it/128x24" width="128" height="24" alt="Название сайта"></a>
-      <ul class="social__list">
+      <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
         </li>
