@@ -31,37 +31,37 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__head">
+      <div class="page-main__head--form">
         <h1 class="heading1 heading1--match-program">Подбор программы</h1>
       </div>
-      <b class="phrase phrase--form">Заполните анкету и мы подберем программу питания для вашего кота</b>
       <section class="form">
+        <b class="phrase form__phrase">Заполните анкету и мы подберем программу питания для вашего кота</b>
         <form action="https://echo.htmlacademy.ru" method="post" name="match-program">
-          <fieldset>
+          <fieldset class="form__fieldset">
             <label class="form__label">Имя:<sup>*</sup><input type="text" name="name"></label>
             <label class="form__label">Вес (кг):<sup>*</sup><input type="text" name="weight"></label>
             <label class="form__label">Возраст (лет): <input type="number" name="age"></label>
+            <div class="form__radio">
+              <label class="form__label"><input type="radio" name="program" value="losing-weight">Похудение</label>
+              <label class="form__label"><input type="radio" name="program" value="add-weight">Набор массы</label>
+              <label class="form__label"><input type="radio" name="program" value="dont-know">Не знаю (нужен ваш совет)</label>
+            </div>
           </fieldset>
-          <fieldset>
-            <label class="form__label"><input type="radio" name="program" value="losing-weight">Похудение</label>
-            <label class="form__label"><input type="radio" name="program" value="add-weight">Набор массы</label>
-            <label class="form__label"><input type="radio" name="program" value="dont-know">Не знаю (нужен ваш совет)</label>
+          <fieldset class="form__fieldset form__fieldset--border">
+            <legend class="heading2 form__heading2">Контактные данные (владельца кота)</legend>
+            <label class="form__label">E-mail:<sup>*</sup><input type="email" name="email"></label>
+            <label class="form__label">Телефон:<sup>*</sup><input type="tel" name="telephone"></label>
           </fieldset>
-          <fieldset>
-          <h2 class="heading2 heading2--contacts">Контактные данные (владельца кота)</h2>
-          <label class="form__label">E-mail:<sup>*</sup><input type="email" name="email"></label>
-          <label class="form__label">Телефон:<sup>*</sup><input type="tel" name="telephone"></label>
+          <fieldset class="form__fieldset form__fieldset--border">
+            <legend class="heading2 form__heading2">Комментарий</legend>
+            <textarea class="form__label" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset>
-          <h2 class="heading2 heading2--comment">Комментарий</h2>
-          <textarea class="form__label" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset>
-          <h2 class="heading2 heading2--additional">Дополнительно</h2>
-          <label class="form__label"><input type="checkbox" name="sugar-replacer">Сахарозамениель</label>
-          <label class="form__label"><input type="checkbox" name="water">Питьевая вода</label>
-          <label class="form__label"><input type="checkbox" name="milk">Молоко</label>
-          <label class="form__label"><input type="checkbox" name="vitamins">Витамины</label>
+          <fieldset class="form__fieldset form__fieldset--border">
+            <legend class="heading2 form__heading2">Дополнительно</legend>
+            <label class="form__label"><input type="checkbox" name="sugar-replacer">Сахарозамениель</label>
+            <label class="form__label"><input type="checkbox" name="water">Питьевая вода</label>
+            <label class="form__label"><input type="checkbox" name="milk">Молоко</label>
+            <label class="form__label"><input type="checkbox" name="vitamins">Витамины</label>
           </fieldset>
           <button class="button button--submit" type="submit"> Отправить заявку</button>
         </form>
